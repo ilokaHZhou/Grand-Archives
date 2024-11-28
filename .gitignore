@@ -1,3 +1,7 @@
+## VitePress
+cache
+dist
+
 ## Javascript
 node_modules
 
