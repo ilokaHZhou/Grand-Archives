@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Java
-      link: /Java/markdown-examples
+      link: /Java/Basics/基本数据类型
     - theme: alt
       text: Python
       link: /api-examples

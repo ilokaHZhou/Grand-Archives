@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Java', link: '/Java/Basics/基本数据类型' }
     ],
 
     sidebar: [
@@ -16,11 +16,23 @@ export default defineConfig({
         text: 'Java',
         items: [
           { text: '基本数据类型', link: '/Java/Basics/基本数据类型' },
-          { text: '基本运算符', link: '/Java/Basics/基本运算符' },
+          { text: '运算符', link: '/Java/Basics/运算符' },
+          { text: '修饰符', link: '/Java/Basics/修饰符' },
           { text: '基本语句', link: '/Java/Basics/基本语句' },
           { text: '命名规范', link: '/Java/Basics/命名规范' },
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      },
+      {
+        text: '数据结构',
+        items: [
+          { text: '字符串', link: '/Java/Data-Structure/字符串' },
+          { text: '数组', link: '/Java/Data-Structure/数组' },
+          { text: '链表', link: '/Java/Data-Structure/链表' },
+          { text: '二叉树', link: '/Java/Data-Structure/二叉树' },
+          { text: '堆、栈、队列', link: '/Java/Data-Structure/堆、栈、队列' },
+          { text: '哈希', link: '/Java/Data-Structure/哈希' }
         ]
       }
     ],
