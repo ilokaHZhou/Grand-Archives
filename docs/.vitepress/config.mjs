@@ -21,6 +21,7 @@ export default defineConfig({
           { text: '基本语句', link: '/Java/Basics/基本语句' },
           { text: '命名规范', link: '/Java/Basics/命名规范' },
           { text: '文件处理I/O', link: '/Java/Basics/文件处理与输入输出' },
+          { text: '数组', link: '/Java/Basics/数组' },
 
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
@@ -29,7 +30,14 @@ export default defineConfig({
       {
         text: '数据结构',
         items: [
-          { text: '字符串', link: '/Java/Data-Structure/字符串' },
+          {
+            text: 'Collection', 
+            items: [
+              { text: 'List', link: '/Java/Data Structure/List' },
+              { text: 'Map', link: '/Java/Data Structure/Map' },
+              { text: '集合选择', link: '/Java/Data Structure/集合选择' },
+            ]
+          },
           { text: '数组', link: '/Java/Data-Structure/数组' },
           { text: '链表', link: '/Java/Data-Structure/链表' },
           { text: '二叉树', link: '/Java/Data-Structure/二叉树' },
