@@ -282,3 +282,63 @@ public class LinkedListExample {
     }
 }
 ```
+
+
+## Vector
+
+**创建 `Vector` 实例**
+```java
+import java.util.Vector;
+
+public class VectorExample {
+    public static void main(String[] args) {
+        Vector<String> vector = new Vector<>();
+    }
+}
+```
+
+### 增删改
+
+```java
+public class VectorExample {
+    public static void main(String[] args) {
+        Vector<String> vector = new Vector<>();
+        vector.add("Apple");
+        vector.add("Banana");
+        System.out.println(vector); // 输出: [Apple, Banana]
+
+        int size = vector.size(); // 获取Vector大小
+        System.out.println(size); // 输出: 2
+
+        String fruit = vector.get(1); // 访问第二个元素
+        System.out.println(fruit); // 输出: Banana
+
+        vector.set(1, "Blueberry"); // 修改第二个元素
+        System.out.println(vector); // 输出: [Apple, Blueberry]
+
+        vector.remove(1); // 删除第二个元素
+        System.out.println(vector); // 输出: [Apple]
+    }
+}
+
+```
+
+迭代：
+
+```java
+import java.util.Enumeration;
+
+public class VectorExample {
+    public static void main(String[] args) {
+        Vector<String> vector = new Vector<>();
+        vector.add("Apple");
+        vector.add("Banana");
+
+        Enumeration<String> enumeration = vector.elements();
+        while (enumeration.hasMoreElements()) {
+            String fruit = enumeration.nextElement();
+            System.out.println(fruit);
+        }
+    }
+}
+```
