@@ -37,9 +37,7 @@ export default defineConfig({
               { text: 'Map', link: '/Java/Data Structure/Map' },
               { text: '集合选择', link: '/Java/Data Structure/集合选择' },
             ]
-          },
-          { text: '数组', link: '/Java/Data-Structure/数组' },
-          { text: '链表', link: '/Java/Data-Structure/链表' },
+          },,
           { text: '二叉树', link: '/Java/Data-Structure/二叉树' },
           { text: '堆、栈、队列', link: '/Java/Data-Structure/堆、栈、队列' },
           { text: '哈希', link: '/Java/Data-Structure/哈希' }
