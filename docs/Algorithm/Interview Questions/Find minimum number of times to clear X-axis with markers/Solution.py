@@ -11,7 +11,7 @@ def min_markers_to_clear_segments(startX, endX):
     
     # 遍历所有线段
     for start, end in segments:
-        # 如果当前线段的起点大于最后一个标记物位置，选择新的标记物
+        # 如果当前线段的起点大于最后一个标记物位置，选择新的标记物（这个marker能划掉的就这么多线段了，准备找下一组能被一个marker划掉的线段）
         if start > last_marker:
             # 将标记物放在当前线段的结束坐标
             last_marker = end
@@ -21,8 +21,8 @@ def min_markers_to_clear_segments(startX, endX):
 
 # 示例输入
 numS = 3
-startX = [1, 2, 3]
-endX = [4, 5, 6]
+startX = [1, 2, 3, 6]
+endX = [5, 4, 6, 7]
 
 # 调用函数
 result = min_markers_to_clear_segments(startX, endX)
