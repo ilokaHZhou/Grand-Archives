@@ -1,5 +1,5 @@
 class Solution:
-    def sortedSquares(self, nums: List[int]) -> List[int]:
+    def sortedSquares(self, nums: List[int]) -> List[int]: # 双指针向中间靠拢法
         l, r, i = 0, len(nums)-1, len(nums)-1
         res = [float('inf')] * len(nums) # 需要提前定义列表，存放结果
         while l <= r:
