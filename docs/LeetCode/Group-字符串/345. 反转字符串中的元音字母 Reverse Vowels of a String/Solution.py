@@ -1,3 +1,4 @@
+# 用双指针分别从左右两侧向中间遍历，便于同时找到两侧第n个元音字母来做交换
 class Solution:
     def reverseVowels(self, s: str) -> str:
         l, r = 0, len(s) - 1
@@ -13,4 +14,3 @@ class Solution:
                 chars[l], chars[r] = chars[r], chars[l]
                 l, r = l + 1, r - 1
         return ''.join(chars)
-        
