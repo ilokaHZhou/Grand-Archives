@@ -6,5 +6,5 @@ class Solution:
             ransom_count[ord(c) - ord('a')] += 1
         for c in magazine:
             magazine_count[ord(c) - ord('a')] += 1
-        # 检查是否ransom里出现的字符都在magazine里有且数量不多于magazine提供的
+        # 检查是否ransom里出现的字符都在magazine里有, 且数量不多于magazine提供的
         return all(ransom_count[i] <= magazine_count[i] for i in range(26))
