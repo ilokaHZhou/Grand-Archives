@@ -24,7 +24,6 @@ arr[i] > arr[i + 1] > ... > arr[arr.length - 1]
 
 1 <= arr.length <= 104
 0 <= arr[i] <= 104
- 
 
 进阶：
 
